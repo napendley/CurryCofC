@@ -2128,17 +2128,17 @@ input, select, textarea {
 			}
 
 		.image.avatar {
-			border-radius: 80%;
+			border-radius: 100%;
 		}
 
-			.image.avatar::before {
-    content: none;
-    display: none;
-}
+			.image.avatar:before {
+				display: none;
+			}
 
 			.image.avatar img {
-    border-radius: 100%;
-}
+				border-radius: 100%;
+				width: 100%;
+			}
 /* List */
 
 	ol {
@@ -2645,6 +2645,7 @@ input, select, textarea {
 				transform: translateY(10px);
 				width: 100%;
 			}
+
 
 /* Footer */
 
