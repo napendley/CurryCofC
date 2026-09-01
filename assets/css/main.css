@@ -2615,6 +2615,7 @@ input, select, textarea {
 			-ms-flex-grow: 1;
 			flex-grow: 1;
 			margin: 0 0 2em 0;
+			text-align: center;
 		}
 
 		#header strong, #header b {
@@ -2633,7 +2634,8 @@ input, select, textarea {
 		}
 
 		#header .image.avatar {
-			margin: 0 0 1em 0;
+			display: block;
+			margin: 0 auto 1em auto;
 			width: 6.25em;
 		}
 
