@@ -2699,7 +2699,7 @@ input, select, textarea {
         ),
         url("../../images/crossbg.jpg");
 
-		background-position: left;
+		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
