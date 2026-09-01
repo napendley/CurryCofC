@@ -2698,7 +2698,7 @@ input, select, textarea {
         ),
         url("../../images/crossbg.jpg");
 
-		background-position: right;
+		background-position: left;
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
