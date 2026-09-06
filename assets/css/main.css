@@ -2237,6 +2237,13 @@ input, select, textarea {
 				width: 1em;
 			}
 
+	#one .labeled-icons li {
+    background: rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.35);
+    border-radius: 1em;
+    margin-bottom: 0.75em;
+    padding: 1em 1.25em;
+}
 /* Actions */
 
 	ul.actions {
