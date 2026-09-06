@@ -2236,6 +2236,12 @@ input, select, textarea {
 				top: 0;
 				width: 1em;
 			}
+			#one .labeled-icons li h3 {
+			position: static;
+			width: auto;
+			text-align: left;
+			margin: 0 0 0.75em 0;
+}
 
 	#one .labeled-icons li {
     background: rgba(0, 0, 0, 0.08);
