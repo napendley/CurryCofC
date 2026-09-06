@@ -3068,6 +3068,13 @@ input, select, textarea {
 
 	}
 
+/* Footer logo hidden by default on desktop */
+
+.footer-logo {
+    display: none;
+}
+
+
 /* Medium */
 
 @media screen and (max-width: 980px) {
@@ -3104,24 +3111,18 @@ input, select, textarea {
         width: 100%;
     }
 
-    #header > .inner {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     #header h1 {
         font-size: 1.75em;
-        order: 1;
-    }
-
-    #header .image.avatar {
-        order: 2;
-        margin: 1em auto 0;
     }
 
     #header h1 br {
         display: inline;
+    }
+
+    /* Hide the header logo on mobile */
+
+    #header .image.avatar {
+        display: none;
     }
 
     /* Footer */
@@ -3140,6 +3141,21 @@ input, select, textarea {
         padding: 4em 4em 6em 4em;
         position: relative;
         text-align: center;
+        width: 100%;
+    }
+
+    /* Display the second logo in the mobile footer */
+
+    #footer .footer-logo {
+        border-bottom: 0;
+        display: block;
+        margin: 0 auto 1.5em;
+        width: 6.25em;
+    }
+
+    #footer .footer-logo img {
+        display: block;
+        height: auto;
         width: 100%;
     }
 
@@ -3168,106 +3184,115 @@ input, select, textarea {
     }
 }
 
+
 /* Small */
 
-	@media screen and (max-width: 736px) {
+@media screen and (max-width: 736px) {
 
-		/* Basic */
+    /* Basic */
 
-			h1 {
-				font-size: 1.5em;
-			}
+    h1 {
+        font-size: 1.5em;
+    }
 
-			h2 {
-				font-size: 1.2em;
-			}
+    h2 {
+        font-size: 1.2em;
+    }
 
-			h3 {
-				font-size: 1em;
-			}
+    h3 {
+        font-size: 1em;
+    }
 
-		/* Section/Article */
+    /* Section/Article */
 
-			section.special, article.special {
-				text-align: center;
-			}
+    section.special,
+    article.special {
+        text-align: center;
+    }
 
-			header.major h2 {
-				font-size: 1.35em;
-			}
+    header.major h2 {
+        font-size: 1.35em;
+    }
 
-		/* List */
+    /* List */
 
-			ul.labeled-icons li {
-				padding-left: 2em;
-			}
+    ul.labeled-icons li {
+        padding-left: 2em;
+    }
 
-				ul.labeled-icons li h3 {
-					line-height: 1.75em;
-				}
+    ul.labeled-icons li h3 {
+        line-height: 1.75em;
+    }
 
-		/* Header */
+    /* Header */
 
-			#header {
-				padding: 2.25em 1.5em;
-			}
+    #header {
+        padding: 2.25em 1.5em;
+    }
 
-				#header h1 {
-					font-size: 1.35em;
-				}
+    #header h1 {
+        font-size: 1.35em;
+    }
 
-		/* Footer */
+    /* Footer */
 
-			#footer {
-				padding: 2.25em 1.5em;
-			}
+    #footer {
+        padding: 2.25em 1.5em;
+    }
 
-		/* Main */
+    #footer .footer-logo {
+        width: 6.25em;
+    }
 
-			#main {
-				padding: 2.25em 1.5em 0.25em 1.5em;
-			}
+    /* Main */
 
-				#main > section {
-					margin: 2.25em 0 0 0;
-					padding: 2.25em 0 0 0;
-				}
+    #main {
+        padding: 2.25em 1.5em 0.25em;
+    }
 
-		/* Poptrox */
+    #main > section {
+        margin: 2.25em 0 0;
+        padding: 2.25em 0 0;
+    }
 
-			.poptrox-popup {
-				border-radius: 0;
-			}
+    /* Poptrox */
 
-				.poptrox-popup .nav-next:before,
-				.poptrox-popup .nav-previous:before {
-					margin-top: -1em;
-				}
+    .poptrox-popup {
+        border-radius: 0;
+    }
 
-	}
+    .poptrox-popup .nav-next::before,
+    .poptrox-popup .nav-previous::before {
+        margin-top: -1em;
+    }
+}
+
 
 /* XSmall */
 
-	@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
 
-		/* Header */
+    /* Header */
 
-			#header {
-				padding: 4.5em 1.5em;
-			}
+    #header {
+        padding: 4.5em 1.5em;
+    }
 
-				#header h1 br {
-					display: none;
-				}
+    #header h1 br {
+        display: none;
+    }
 
-		/* Footer */
+    /* Footer */
 
-			#footer .copyright li {
-				border-left-width: 0;
-				display: block;
-				line-height: 2.25em;
-				margin-left: 0;
-				padding-left: 0;
-			}
+    #footer .footer-logo {
+        width: 5.5em;
+    }
 
-	}
+    #footer .copyright li {
+        border-left-width: 0;
+        display: block;
+        line-height: 2.25em;
+        margin-left: 0;
+        padding-left: 0;
+    }
+}
