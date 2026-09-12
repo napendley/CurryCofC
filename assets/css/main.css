@@ -3410,3 +3410,8 @@ input, select, textarea {
 		box-sizing: border-box;
 	}
 }
+
+body.home-page #main > #two {
+	margin-top: 1em;
+	padding-top: 1em;
+}
