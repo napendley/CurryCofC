@@ -3421,3 +3421,20 @@ body.home-page #main > #two {
 	margin-top: 1em;
 	padding-top: 1em;
 }
+
+.giving-qr {
+	width: 100%;
+	margin: 2em auto;
+	text-align: center;
+}
+
+.giving-qr img {
+	display: block;
+	width: clamp(180px, 50vw, 400px);
+	height: auto;
+	margin: 0 auto 1em;
+}
+
+.giving-qr p {
+	margin: 0;
+}
