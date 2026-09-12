@@ -3401,3 +3401,14 @@ input, select, textarea {
 		height: 325px !important;
 	}
 }
+
+/* Full-height desktop page background */
+
+@media screen and (min-width: 981px) {
+	#main {
+		min-height: 100vh;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+}
