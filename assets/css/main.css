@@ -3402,13 +3402,11 @@ input, select, textarea {
 	}
 }
 
-/* Full-height desktop page background */
+/* Extend short page backgrounds to the bottom of the desktop screen */
 
 @media screen and (min-width: 981px) {
-	#main {
+	#main > #one {
 		min-height: 100vh;
-		background-size: cover;
-		background-position: center center;
-		background-repeat: no-repeat;
+		box-sizing: border-box;
 	}
 }
