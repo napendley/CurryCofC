@@ -3414,12 +3414,12 @@ input, select, textarea {
 /* Reduce space above the homepage content */
 
 body.home-page #main {
-	padding-top: 4em;
+	padding-top: 2em;
 }
 
 @media screen and (max-width: 980px) {
 	body.home-page #main {
-		padding-top: 3em;
+		padding-top: 2em;
 	}
 }
 
