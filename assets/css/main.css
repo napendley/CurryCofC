@@ -3332,3 +3332,45 @@ input, select, textarea {
 .image.visit-thumb:focus::after {
 	opacity: 1;
 }
+
+/* Home button */
+
+.home-button {
+	position: fixed;
+	top: 1rem;
+	left: 1rem;
+	z-index: 10000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 2.75rem;
+	height: 2.75rem;
+	border-radius: 50%;
+	background: rgba(0, 0, 0, 0.55);
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	color: white !important;
+	text-decoration: none;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+	transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.home-button:hover {
+	background: #173e73;
+	color: white !important;
+	transform: scale(1.08);
+}
+
+.home-button:active {
+	transform: scale(0.95);
+}
+
+@media screen and (max-width: 736px) {
+	.home-button {
+		top: 0.75rem;
+		left: 0.75rem;
+		width: 2.5rem;
+		height: 2.5rem;
+		font-size: 0.9rem;
+	}
+}
