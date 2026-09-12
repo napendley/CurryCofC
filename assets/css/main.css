@@ -3375,45 +3375,29 @@ input, select, textarea {
 	}
 }
 
-/* Responsive Google Map */
+/* Responsive location map */
 
 .map-container {
+	display: block;
 	width: 100%;
-	max-width: 900px;
-	height: 520px;
-	margin: 2rem auto;
-	overflow: hidden;
-	border-radius: 0.35em;
+	max-width: none;
+	margin: 3rem 0;
 }
 
 .map-container iframe {
 	display: block;
-	width: 100%;
-	height: 100%;
+	width: 100% !important;
+	height: 525px !important;
 	border: 0;
+	border-radius: 0.5rem;
 }
-
-/* Tablets */
-
-@media screen and (max-width: 980px) {
-	.map-container {
-		height: 450px;
-	}
-}
-
-/* Phones */
 
 @media screen and (max-width: 736px) {
 	.map-container {
-		height: 325px;
-		margin: 1.5rem auto;
+		margin: 2rem 0;
 	}
-}
 
-/* Small phones */
-
-@media screen and (max-width: 480px) {
-	.map-container {
-		height: 275px;
+	.map-container iframe {
+		height: 325px !important;
 	}
 }
