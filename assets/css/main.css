@@ -3402,10 +3402,10 @@ input, select, textarea {
 	}
 }
 
-/* Extend backgrounds only on short subpages */
+/* Extend the complete subpage, without stretching its first section */
 
 @media screen and (min-width: 981px) {
-	body.subpage #main > #one {
+	body.subpage #main {
 		min-height: 100vh;
 		box-sizing: border-box;
 	}
