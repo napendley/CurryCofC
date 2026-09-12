@@ -3402,12 +3402,11 @@ input, select, textarea {
 	}
 }
 
-/* Extend short page backgrounds to the bottom of the desktop screen */
+/* Extend backgrounds only on short subpages */
 
 @media screen and (min-width: 981px) {
-	#main > #one {
+	body.subpage #main > #one {
 		min-height: 100vh;
 		box-sizing: border-box;
 	}
 }
-
