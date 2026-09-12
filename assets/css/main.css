@@ -3411,6 +3411,12 @@ input, select, textarea {
 	}
 }
 
+/* Homepage section spacing */
+
+body.home-page #main > #one {
+	min-height: 0;
+}
+
 body.home-page #main > #two {
 	margin-top: 1em;
 	padding-top: 1em;
