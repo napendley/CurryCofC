@@ -3446,17 +3446,6 @@ body.home-page #main > #two {
 
 .leadership ul {
     margin: 0 0 1.25em 3em;
-    padding: 0;
-    list-style: none;
-}
-
-.leadership li {
-    margin: 0;
-    line-height: 1.5;
-}
-
-.leadership ul {
-    margin: 0 0 1.25em 3em;
     padding-left: 1.25em;
     list-style: disc;
 }
