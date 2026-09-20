@@ -3438,3 +3438,19 @@ body.home-page #main > #two {
 .giving-qr p {
 	margin: 0;
 }
+
+.leadership h2 {
+    margin: 0 0 0.35em 0;
+    font-size: 1.35em;
+}
+
+.leadership ul {
+    margin: 0 0 1.25em 1.5em;
+    padding: 0;
+    list-style: none;
+}
+
+.leadership li {
+    margin: 0;
+    line-height: 1.5;
+}
