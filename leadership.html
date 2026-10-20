@@ -1,98 +1,257 @@
 <!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<html>
-	<head>
+	<title>Leadership | Curry Church of Christ</title>
+
 	<!-- Website icons -->
-<link rel="icon" href="./favicon.ico?v=2" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png?v=2">
-<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png?v=2">
-<link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png?v=2">
-<link rel="manifest" href="./site.webmanifest">
+	<link rel="icon" href="./favicon.ico?v=2" sizes="any">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png?v=2">
+	<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png?v=2">
+	<link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png?v=2">
+	<link rel="manifest" href="./site.webmanifest">
 
-<meta name="theme-color" content="#173e73">
-<meta name="application-name" content="Curry Church of Christ">
-<meta name="apple-mobile-web-app-title" content="Curry CoC">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
-		<title>Curry Church of Christ</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!-- Curry Church of Christ site icons -->
+	<meta name="theme-color" content="#173e73">
+	<meta name="application-name" content="Curry Church of Christ">
+	<meta name="apple-mobile-web-app-title" content="Curry CoC">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
 
-	</head>
-	<body class="is-preload subpage">
-<a href="index.html" class="home-button icon solid fa-home">
-	<span class="label">Home</span>
-</a>
+	<link rel="stylesheet" href="assets/css/main.css" />
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="#Curry Logo" class="image avatar"><img src="images/logo.jpg" alt="Curry Church of Christ logo" /></a>
-					<h1><strong>Curry Church of Christ</strong></h1>
-				</div>
+	<style>
+		/* Leadership portraits and names */
+		#one .leader-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+			gap: 2rem 1.5rem;
+			list-style: none;
+			margin: 0 0 3rem;
+			padding: 0;
+		}
+
+		#one .leader-grid li {
+			min-width: 0;
+			padding: 0;
+			text-align: center;
+		}
+
+		#one .leader-portrait {
+			display: block;
+			width: 100%;
+			max-width: 200px;
+			aspect-ratio: 4 / 5;
+			margin: 0 auto 0.85rem;
+			object-fit: cover;
+			object-position: center top;
+			border-radius: 8px;
+		}
+
+		#one .leader-name {
+			margin: 0;
+			font-size: 1rem;
+			line-height: 1.5;
+		}
+
+		#one .leadership-heading {
+			margin-bottom: 1.5rem;
+		}
+
+		@media screen and (max-width: 480px) {
+			#one .leader-grid {
+				grid-template-columns: repeat(2, minmax(0, 1fr));
+				gap: 1.5rem 1rem;
+			}
+		}
+	</style>
+</head>
+
+<body class="is-preload subpage">
+
+	<a href="index.html" class="home-button icon solid fa-home">
+		<span class="label">Home</span>
+	</a>
+
+	<!-- Header -->
+	<header id="header">
+		<div class="inner">
+			<a href="index.html" class="image avatar">
+				<img src="images/logo.jpg" alt="Curry Church of Christ logo" />
+			</a>
+			<h1><strong>Curry Church of Christ</strong></h1>
+		</div>
+	</header>
+
+	<!-- Main -->
+	<div id="main">
+		<section id="one">
+			<header class="major">
+				<h2>Curry Church of Christ</h2>
 			</header>
 
-		<!-- Main -->
-			<div id="main">
+			<h3 class="leadership-heading">Elders:</h3>
 
-				<!-- One -->
-					<section id="one">
-						<header class="major">
-							<h2>Curry Church of Christ</h2>
-						</header>
-						<h3>Elders:</h3>
-						<ul>
-						<li>Mark Barker</li>
-						<li>Carl Dunagan</li>
-						<li>Johnny Meadows</li>
-						<li>Billy Thompson</li>
-						</ul>
-						
-						<h3>Deacons:</h3>
-						<ul>
-						<li>Delbert Allred</li>
-						<li>Doug Barnett</li>
-						<li>Clifford Dunagan</li>
-						<li>Ed Glass</li>
-						<li>Michael Kilpatrick</li>
-						<li>Jerry McLemore</li>
-						</ul>
+			<ul class="leader-grid">
+				<li>
+					<img
+						class="leader-portrait"
+						src="images/leaders/mark.jpg"
+						alt="Portrait of Mark Barker"
+						loading="lazy"
+					/>
+					<h4 class="leader-name">Mark Barker</h4>
+				</li>
 
-						<h3>Ministers:</h3>
-						<ul>
-						<li>Patrick Morison</li>
-						</ul>
+				<li>
+					<img
+						class="leader-portrait"
+						src="images/leaders/carl.jpg"
+						alt="Portrait of Carl Dunagan"
+						loading="lazy"
+					/>
+					<h4 class="leader-name">Carl Dunagan</h4>
+				</li>
 
-					</section>
-					
-			</div>
+				<li>
+					<img
+						class="leader-portrait"
+						src="images/leaders/johnny.jpg"
+						alt="Portrait of Johnny Meadows"
+						loading="lazy"
+					/>
+					<h4 class="leader-name">Johnny Meadows</h4>
+				</li>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-				<a href="#" class="footer-logo">
+				<li>
+					<img
+						class="leader-portrait"
+						src="images/leaders/billy.jpg"
+						alt="Portrait of Billy Thompson"
+						loading="lazy"
+					/>
+					<h4 class="leader-name">Billy Thompson</h4>
+				</li>
+			</ul>
+
+			<h3 class="leadership-heading">Deacons:</h3>
+
+			<ul class="leader-grid">
+				<li>
+					<img
+						class="leader-portrait"
+						src="images/leaders/delbert.jpg"
+						alt="Portrait of Delbert Allred"
+						loading="lazy"
+					/>
+					<h4 class="leader-name">Delbert Allred</h4>
+				</li>
+
+				<li>
+					<img
+						class="leader-portrait"
+						src="images/leaders/doug.jpg"
+						alt="Portrait of Doug Barnett"
+						loading="lazy"
+					/>
+					<h4 class="leader-name">Doug Barnett</h4>
+				</li>
+
+				<li>
+					<img
+						class="leader-portrait"
+						src="images/leaders/clifford.jpg"
+						alt="Portrait of Clifford Dunagan"
+						loading="lazy"
+					/>
+					<h4 class="leader-name">Clifford Dunagan</h4>
+				</li>
+
+				<li>
+					<img
+						class="leader-portrait"
+						src="images/leaders/ed.jpg"
+						alt="Portrait of Ed Glass"
+						loading="lazy"
+					/>
+					<h4 class="leader-name">Ed Glass</h4>
+				</li>
+
+				<li>
+					<img
+						class="leader-portrait"
+						src="images/leaders/michael.jpg"
+						alt="Portrait of Michael Kilpatrick"
+						loading="lazy"
+					/>
+					<h4 class="leader-name">Michael Kilpatrick</h4>
+				</li>
+
+				<li>
+					<img
+						class="leader-portrait"
+						src="images/leaders/jerry.jpg"
+						alt="Portrait of Jerry McLemore"
+						loading="lazy"
+					/>
+					<h4 class="leader-name">Jerry McLemore</h4>
+				</li>
+			</ul>
+
+			<h3 class="leadership-heading">Ministers:</h3>
+
+			<ul class="leader-grid">
+				<li>
+					<img
+						class="leader-portrait"
+						src="images/leaders/patrick.jpg"
+						alt="Portrait of Patrick Morison"
+						loading="lazy"
+					/>
+					<h4 class="leader-name">Patrick Morison</h4>
+				</li>
+			</ul>
+		</section>
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<a href="#" class="footer-logo">
 				<img src="images/logo.jpg" alt="Curry Church of Christ logo" />
-				</a>
-					<ul class="icons">
-						<li><a href="https://www.facebook.com/profile.php?id=100064907223439" class="icon brands fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Curry Church of Christ</li><br />
-						<li>5454 Curry Hwy Jasper, AL 35503</li>
-					</ul>
-				</div>
-			</footer>
+			</a>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<ul class="icons">
+				<li>
+					<a
+						href="https://www.facebook.com/profile.php?id=100064907223439"
+						class="icon brands fa-facebook"
+					>
+						<span class="label">Facebook</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="icon solid fa-envelope">
+						<span class="label">Email</span>
+					</a>
+				</li>
+			</ul>
 
-	</body>
+			<ul class="copyright">
+				<li>&copy; Curry Church of Christ</li>
+				<li>5454 Curry Hwy Jasper, AL 35503</li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.poptrox.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
 </html>
